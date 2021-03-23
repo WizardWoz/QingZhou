@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".discussion.TabSecondActivity">
+
+    <!--统一风格标题栏引入-->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--这里背景用了drawable一个已经定义好的布局，圆角矩形-->
+    <TextView
+        android:id="@+id/room_topic"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:background="@drawable/textviewback"
+        android:gravity="center"
+        android:text="Topic:***"
+        android:textSize="18dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#F2F2F2"
+        android:layout_weight="12">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#F2F2F2"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:id="@+id/user1_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/align_view"
+                android:layout_marginTop="-70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user1_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/align_view"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="name1"/>
+
+            <!--    这个view对齐用        -->
+            <View
+                android:id="@+id/align_view"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/user2_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/align_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-105dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user2_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/align_view"
+                android:layout_marginTop="105dp"
+                android:gravity="center"
+                android:text="name2"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textviewback"
+                android:gravity="center"
+                android:text="Bulletin Board"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_msgview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="8"
+                android:background="#F2F2F2" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2">
+
+            <!--外教-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:src="@drawable/user" />-->
+
+            <!--这个view对齐用-->
+
+            <ImageView
+                android:id="@+id/user3_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/align_view2"
+                android:layout_marginTop="-70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user3_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/align_view2"
+                android:layout_marginTop="-10dp"
+                android:gravity="center"
+                android:text="name3"/>
+
+            <View
+                android:id="@+id/align_view2"
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/user4_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/align_view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-105dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user4_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/align_view2"
+                android:layout_marginTop="105dp"
+                android:gravity="center"
+                android:text="name4"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_audio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/microphone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

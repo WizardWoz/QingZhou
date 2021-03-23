@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_roomselecttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="请完善房间信息"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_roomtheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讨论主题："
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/tv_roomtheme"
+            android:id="@+id/sp_roomtheme"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="讨论人数："
+            android:textSize="18sp"
+            android:id="@+id/tv_roomcapacity"
+            android:layout_below="@+id/tv_roomtheme"
+            android:layout_marginTop="25dp"/>
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:spinnerMode="dropdown"
+            android:id="@+id/sp_roomcapacity"
+            android:layout_below="@+id/sp_roomtheme"
+            android:layout_toRightOf="@+id/tv_roomcapacity"/>
+
+        <Button
+            android:id="@+id/btn_confirmroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_roomcapacity"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="35dp"
+            android:text="确定"/>
+
+        <Button
+            android:id="@+id/btn_cancleroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sp_roomcapacity"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="取消"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

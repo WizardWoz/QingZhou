@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_record_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="请开始录音"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_current_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="0:00"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_current_pro"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_current_length" />
+
+        <TextView
+            android:id="@+id/tv_max_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pb_current_pro"
+            android:layout_marginTop="10dp"
+            android:text="1:40"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_confirm_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_max_length"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="发送"/>
+
+        <Button
+            android:id="@+id/btn_cancel_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_max_length"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="取消" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="“资讯”功能暂未开放，敬请期待"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--统一风格标题栏引入-->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/fill_view"
+        android:layout_width="wrap_content"
+        android:layout_height="150px"/>
+
+
+    <!--    交互式的RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/fill_view"
+        android:layout_above="@+id/LayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/third_recycler_view" />
+
+    <!--底部按钮-->
+    <RelativeLayout
+        android:id="@+id/LayoutBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/logobtn"
+            android:layout_centerInParent="true"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/blacklogo"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

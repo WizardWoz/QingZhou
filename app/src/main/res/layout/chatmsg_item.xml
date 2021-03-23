@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/Record_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/others_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tab_forth_normal" />
+
+        <TextView
+            android:id="@+id/others_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/others_pic"
+            android:layout_marginLeft="3dp"
+            android:text="user" />
+
+        <ImageView
+            android:id="@+id/others_message"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/others_pic"
+            android:src="@drawable/message_left" />
+
+        <ImageView
+            android:id="@+id/mine_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/tab_forth_normal" />
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_pic"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:text="user" />
+
+        <ImageView
+            android:id="@+id/mine_message"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/mine_pic"
+            android:src="@drawable/message_right" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_marginTop="5dp"
+        android:text="用户1说话"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Record_relativelayout"
+        android:background="@color/mediumpurple"/>
+
+</RelativeLayout>

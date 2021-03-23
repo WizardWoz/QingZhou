@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_above="@+id/comment_user_name"/>
+
+    <ImageView
+        android:id="@+id/room_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/tab_second_normal"/>
+
+    <TextView
+        android:id="@+id/comment_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/room_pic"
+        android:layout_marginLeft="30dp"
+        android:text="房间主题："/>
+    <TextView
+        android:id="@+id/tv_roomtheme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/comment_user_name"
+        android:text="11111111"/>
+
+    <TextView
+        android:id="@+id/comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_user_name"
+        android:layout_marginTop="5dp"
+        android:text="房间号："
+        android:layout_alignLeft="@+id/comment_user_name"/>
+
+    <TextView
+        android:id="@+id/tv_roomid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comment_time"
+        android:layout_below="@+id/tv_roomtheme2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="2333333"/>
+
+    <TextView
+        android:id="@+id/tv_roomcreator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_time"
+        android:layout_alignLeft="@id/comment_time"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="创始人："/>
+
+    <TextView
+        android:id="@+id/tv_roomcreator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_roomcreator1"
+        android:layout_below="@+id/tv_roomid2"
+        android:layout_marginBottom="5dp"
+        android:text="Geo"/>
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_roomcreator1"
+        android:layout_alignLeft="@id/tv_roomcreator1"
+        android:layout_marginBottom="5dp"
+        android:text="在线人数/总容量："/>
+
+    <TextView
+        android:id="@+id/tv_roommembers2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_roomcreator2"
+        android:layout_toRightOf="@+id/comment_text"
+        android:layout_marginBottom="5dp"
+        android:text="1/4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/tv_roommembers2"/>
+
+</RelativeLayout>

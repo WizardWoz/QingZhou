@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66000000">
+    <!--点击换头像后弹出的界面-->
+    <LinearLayout
+        android:id="@+id/pop_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/takephoto_btn"
+            android:textColor="@color/green"
+            android:text="拍照"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectphoto_btn"
+            android:text="从相册中选择"
+            android:textColor="@color/green"/>
+
+        <Button
+            android:id="@+id/Bcannel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cannel_btn"
+            android:text="取消"
+            android:textColor="@color/green"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>>
+
+</RelativeLayout>

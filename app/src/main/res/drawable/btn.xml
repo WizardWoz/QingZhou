@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--用来设置按钮点击前和点击后的颜色-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@color/white"/>
+    <item android:state_pressed="true" android:drawable="@color/lightgray"/>
+</selector>

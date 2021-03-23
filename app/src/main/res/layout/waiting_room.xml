@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".discussion.WaitingRoom">
+
+    <!--    统一风格标题栏引入   -->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menber_list"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="10"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/membernum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30px"
+            android:gravity="center"
+            android:textSize="50px"/>
+        <Button
+            android:id="@+id/join_conference"
+            android:text="加入讨论"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/create_conference"/>
+        <Button
+            android:id="@+id/create_conference"
+            android:text="创建讨论"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/waitRoomTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:textSize="18dp"
+        android:lineSpacingMultiplier="1"
+        android:textIsSelectable="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/sendtext"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+        <Button
+            android:id="@+id/sendbtn"
+            android:text="发送"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

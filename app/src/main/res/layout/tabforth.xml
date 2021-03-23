@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--统一风格标题栏引入-->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:src="@drawable/tab_forth_selector"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_img"
+            android:text="None"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+<!--    个人信息-->
+    <Button
+        android:id="@+id/user_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn"
+        android:text="@string/person_information"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        />
+
+<!--    账号安全-->
+    <Button
+        android:id="@+id/Account_security_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn"
+        android:text="@string/account_security"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+
+<!--    设置-->
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

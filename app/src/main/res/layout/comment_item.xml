@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <ImageView
+        android:id="@+id/comment_user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/tab_second_normal" />
+
+    <TextView
+        android:id="@+id/comment_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/comment_user_image"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:text="用户名"/>
+
+    <TextView
+        android:id="@+id/comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_user_name"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:text="留言时间"
+        android:layout_alignStart="@+id/comment_user_name"
+        android:enabled="false"
+        android:textColor="@color/black"
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_time"
+        android:layout_alignStart="@id/comment_time"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="17sp"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:text="评论内容"/>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/gray"-->
+<!--        android:layout_below="@id/comment_text"/>-->
+
+</RelativeLayout>

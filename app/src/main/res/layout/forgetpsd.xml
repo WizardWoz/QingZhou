@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_phonenum_first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/Forget1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+        <EditText
+            android:id="@+id/et_enterphonenum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_phonenum_first"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="@string/HintM1"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_password_first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/Forget2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+        <EditText
+            android:id="@+id/et_password_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_password_first"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="@string/HintM2"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_password_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/Forget3"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_password_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_password_second"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="@string/HintM3"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/tv_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/Forget4"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_verifycode" >
+
+            <EditText
+                android:id="@+id/et_verifycode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/editext_selector"
+                android:gravity="left|center"
+                android:hint="@string/HintM4"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_verifycode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="@string/Forget6"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textAllCaps="false"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:text="@string/Forget7"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:text="@string/Cancel"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

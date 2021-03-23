@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:gravity="left"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_ble"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/message_left"
+            android:textColor="@android:color/white"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_layout"
+        android:gravity="right"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/message_right"
+            android:textColor="@android:color/black"
+            android:inputType="textMultiLine"/>
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/user"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/smallclassback">
+
+        <TextView
+            android:id="@+id/level"
+            android:text="第0关"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/describe"
+            android:text="一种哲学的转变"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:text="语言是一个开放的系统"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/blueviolet"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="人们有选择的自由"
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/darkviolet"/>
+
+    </LinearLayout>
+
+</LinearLayout>
